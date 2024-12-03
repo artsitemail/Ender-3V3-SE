@@ -1,7 +1,10 @@
+Fork firmware of Navaismo with Hosts Commands Disable
+
 ## Changes to Creality's Firmware
 - Included the Autolevel-Grid to a 7x7-Mesh based on the fork of [@aschmitt1909](https://github.com/aschmitt1909/Ender-3V3-SE)
 - Included the Linear Advance functions based     on the fork of [@queeup-Forks](https://github.com/queeup-Forks/Ender-3V3-SE)
-- Included the Support of Hosts Commands based    on the fork of [@rtorchia](https://github.com/rtorchia/Ender-3V3-SE/commits/main/) 
+
+- Disable the Support of Hosts Commands
 
 
 > [!IMPORTANT]
@@ -10,24 +13,7 @@
 >
 >  - [x] The 7x7 Mesh to 5x5
 >  - [x] Increase the Z distance when M600(change filament) is invoked to provide enough space to change and purge the filament.
->  - [x] Added M117 Support to show Messages in the LCD Screen.
->  - [x] Added the detailed page and controls of a Print Job Coming from Octoprint to be shown in the LCD
->  - [x] Added custom comand O9000 to receive the data to render in the Print Job Page from Octo print.
->  - [x] Increased Buffers for the Serial Communication.
->  - [x] Increased the BaudRate from 115200 to 128000. 
 
-
-<br />
-
- - [x] ***This firmware needs the [OctoPrint Custom Plugin to send 09000 commands](https://github.com/navaismo/OctoPrint-E3v3seprintjobdetails) in order to render the job in the LCD.***
-
-<br />
-
-
-  ![Octorpint Print Job Detai](https://i.imgur.com/Ir8u0tD.jpeg)
-
-
-<br />
 
 ----
 
