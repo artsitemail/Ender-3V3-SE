@@ -1,4 +1,4 @@
-Fork firmware of Navaismo with Hosts Commands Disable
+Fork firmware of Navaismo with Hosts Commands Disable - not tested
 
 ## Changes to Creality's Firmware
 - Included the Autolevel-Grid to a 7x7-Mesh based on the fork of [@aschmitt1909](https://github.com/aschmitt1909/Ender-3V3-SE)
