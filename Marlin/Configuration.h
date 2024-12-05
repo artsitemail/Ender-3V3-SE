@@ -872,11 +872,11 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 20, 30 }
+#define DEFAULT_MAX_FEEDRATE          { 250, 250, 20, 40 }
 
 #define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
-  #define MAX_FEEDRATE_EDIT_VALUES    { 1000, 1000, 40, 60 } // ...or, set your own edit limits
+  #define MAX_FEEDRATE_EDIT_VALUES    { 500, 500, 40, 80 } // ...or, set your own edit limits
 #endif
 
 /**
@@ -887,7 +887,7 @@
  */
 #if ENABLED(HIGH_SPEED_1)
 // #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 3000 }
-#define DEFAULT_MAX_ACCELERATION      { 4000, 4000, 4000, 4000 }
+#define DEFAULT_MAX_ACCELERATION      { 2500, 2500, 500, 2500 }
 #else 
 #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 3000 }
 // #define DEFAULT_MAX_ACCELERATION      { 1500, 1500, 100, 1500 }
@@ -895,7 +895,7 @@
 #define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
 #if ENABLED(HIGH_SPEED_1) 
-    #define MAX_ACCEL_EDIT_VALUES       { 8000, 8000, 8000, 8000 } // ...or, set your own edit limits
+    #define MAX_ACCEL_EDIT_VALUES       { 2500, 2500, 500, 2500 } // ...or, set your own edit limits
   #else 
    #define MAX_ACCEL_EDIT_VALUES       { 3000, 3000, 100, 3000 } // ...or, set your own edit limits
   #endif
@@ -911,7 +911,7 @@
  */
 #if ENABLED(HIGH_SPEED_1)
   #define DEFAULT_ACCELERATION          2500//1500//2000   // X, Y, Z and E acceleration for printing moves
-  #define DEFAULT_RETRACT_ACCELERATION  2500//1500//2000   // E acceleration for retracts
+  #define DEFAULT_RETRACT_ACCELERATION  500//1500//2000   // E acceleration for retracts
   #define DEFAULT_TRAVEL_ACCELERATION   2500//1500//2000   // X, Y, Z acceleration for travel (non printing) moves
 #else
 // #define DEFAULT_ACCELERATION          600   // X, Y, Z and E acceleration for printing moves
