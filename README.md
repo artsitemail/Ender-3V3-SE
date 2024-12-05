@@ -29,7 +29,7 @@ Fork firmware of Navaismo with Hosts Commands Disable - not tested
 > 3. Plug the SD Card in your printer and turn it on
 > 4. Wait for the update to finish - it needs ~10 seconds.
 > 5. Run a new Autolevel.
-> 6. In Octoprint enable the 128000 baud rate.
+
 
 
 
